@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
 import Reset from './pages/auth/Reset'
-import Announcement from './pages/announcement/announcement'
+import Announcement from './pages/announcement/Announcement'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
