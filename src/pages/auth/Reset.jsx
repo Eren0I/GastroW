@@ -46,7 +46,7 @@ const Reset = () => {
                       <button id="submit" type="submit"  className="btn btn-outline-success lg">Reset</button>
                   </div>
 
-                  <Link to="/login">
+                  <Link to="/gastroW/login">
                   <p>Have an account?</p>
                   </Link>
               </form>
