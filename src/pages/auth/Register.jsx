@@ -39,7 +39,7 @@ toast.error("Passwords not matching", {
     toast.success("Registration successful..", {
         icon: "👨‍🍳"
       })
-      navigate("/login")
+      navigate("/gastroW/login")
   })
   .catch((error) => {
     toast.error(error.message)
