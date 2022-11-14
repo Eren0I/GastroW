@@ -1,0 +1,34 @@
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #121629;
+}
+::-webkit-scrollbar-thumb{
+  background: #eebbc3;
+  border-radius: 10px;
+}
+
+
+
+body {
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.mainpng{
+  max-width: 60%;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+.mainpng:hover{
+  transform: scale(1.4);
+  transition: all 0.7s ease;  
+}
