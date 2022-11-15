@@ -25,23 +25,25 @@ const Reset = () => {
     <><ToastContainer/>
     <Container className='cont'>
     <Row >
-        <Col><img className='authpng' src="images/reset.jpg" /></Col>
+        <Col lg={6} className='imgcol'><img lg={12} className='authpng' src="images/reset.jpg" /></Col>
         <Col  className="row">
 <>
 <div className="form-body">
-<div className="row">
-  <div className="form-holder">
-      <div className="form-content">
-          <div className="form-items">
+
+      <Col md={8} lg={8} className="form-holder">
+  <Col sm={8} md={8} lg={12} className="form-content">
+  <Col sm={8} md={8} lg={8} className="form-items">
+
               <h3>Reset</h3>
               <p>Fill in the data below.</p>
-              <form onSubmit={resetPassword} className="requires-validation" novalidate>
-                  <div className="col-md-6">
+              <form onSubmit={resetPassword} className="requires-validation" noValidate>
+              <Col md={12} lg={12} sm={12} >
+                  <div className="">
                       <input className="form-control" value={email} onChange={(e)=>setEmail(e.target.value)} type="email" name="email" placeholder="E-mail Address" required/>
                        <div className="valid-feedback">Email field is valid!</div>
                        <div className="invalid-feedback">Email field cannot be blank!</div>
                   </div>
-
+</Col>
                   <div className="form-button mt-3">
                       <button id="submit" type="submit"  className="btn btn-outline-success lg">Reset</button>
                   </div>
@@ -50,10 +52,9 @@ const Reset = () => {
                   <p>Have an account?</p>
                   </Link>
               </form>
-          </div>
-      </div>
-  </div>
-</div>
+              </Col>
+              </Col>
+              </Col>
 </div>
 </>
 </Col>

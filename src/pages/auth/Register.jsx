@@ -52,31 +52,32 @@ toast.error("Passwords not matching", {
     {isLoading && <Loader/>}
     <Container className='cont'>
     <Row >
-        <Col><img className='authpng' src="images/register.jpg" /></Col>
-        <Col  className="row">
+        <Col lg={6}><img className='authpng' src="images/register.jpg" /></Col>
+        <Col lg={6}>
 <>
 <div className="form-body">
-<div className="row">
-  <div className="form-holder">
-      <div className="form-content">
-          <div className="form-items">
+
+  <Col sm={8} lg={8} className="form-holder">
+  <Col sm={8} lg={12} className="form-content">
+  <Col sm={8}  lg={8} className="form-items">
+
               <h3>Register Today</h3>
               <p>Fill in the data below.</p>
-              <form onSubmit={registerUser}  className="requires-validation" noValidate>
-
-                  <div className="col-md-6">
+              <form onSubmit={registerUser}  className="requires-validation w-30" noValidate>
+<Col md={12} lg={12} sm={12} >
+                  <div className="">
                      <input className="form-control" value={username} onChange={(e)=>setUsername(e.target.value)} type="text" name="username" placeholder="Full Name" required/>
-                     <div className="valid-feedback">Username field is valid!</div>
-                     <div className="invalid-feedback">Username field cannot be blank!</div>
-                  </div>
 
-                  <div className="col-md-6">
+                  </div>
+</Col>
+<Col md={12} lg={12} sm={12} >
+                  <div className="">
                       <input className="form-control" value={email} type="email" onChange={(e)=>setEmail(e.target.value)} name="email" placeholder="E-mail Address" required/>
-                       <div className="valid-feedback">Email field is valid!</div>
-                       <div className="invalid-feedback">Email field cannot be blank!</div>
-                  </div>
 
-                 <div className="col-md-6">
+                  </div>
+                  </Col>
+                  <Col md={12} lg={12} sm={12} >
+                 <div className="">
                       <select name='job' id="job" value={job} onChange={(e)=>setJob(e.target.value)} className="form-select mt-3" required>
                             <option disabled value="">Position</option>
                             <option value="stu">Öğrenci</option>
@@ -85,20 +86,21 @@ toast.error("Passwords not matching", {
                      </select>
 
                  </div>
-
-
-                 <div className="col-md-6">
+</Col>
+                 <Col md={12} lg={12} sm={12} >
+                 <div className="">
                     <input className="form-control" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} name="password" placeholder="Password" required/>
-                     <div className="valid-feedback">Password field is valid!</div>
-                     <div className="invalid-feedback">Password field cannot be blank!</div>
-                 </div>
-                 <div className="col-md-6">
-                    <input className="form-control" type="password" value={cPassword} onChange={(e)=>setCPassword(e.target.value)} name="cpassword" placeholder="ConfirmPassword" required/>
-                     <div className="valid-feedback">Confirm Password field is valid!</div>
-                     <div className="invalid-feedback">Confirm Password field cannot be blank!</div>
-                 </div>
 
-                 <div className="col-md-6">
+                 </div>
+                 </Col>
+                 <Col md={12} lg={12} sm={12} >
+                 <div className="">
+                    <input className="form-control" type="password" value={cPassword} onChange={(e)=>setCPassword(e.target.value)} name="cpassword" placeholder="ConfirmPassword" required/>
+
+                 </div>
+                 </Col>
+                 <Col md={12} lg={12} sm={12} >
+                 <div className=" ">
                       <select name='gender' id="gender" value={gender} onChange={(e)=>setGender(e.target.value)} className="form-select mt-3" required>
                             <option disabled value="">Gender</option>
                             <option value="kadın">Female</option>
@@ -107,7 +109,7 @@ toast.error("Passwords not matching", {
                      </select>
 
                  </div>
-
+</Col>
 
 
               <div className="form-check">
@@ -121,11 +123,11 @@ toast.error("Passwords not matching", {
                       <button id="submit" type="submit" className="btn btn-warning">Register</button>
                   </div>
               </form>
-          </div>
-      </div>
-  </div>
+              </Col>
+              </Col>
+              </Col>
 </div>
-</div>
+
 </>
 </Col>
     </Row>
