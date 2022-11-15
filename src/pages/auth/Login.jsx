@@ -27,7 +27,7 @@ signInWithEmailAndPassword(auth, email, password)
     const user = userCredential.user;
     toast.success("LogIn Successful...")
     setIsLoading(false)
-    navigate("/")
+    navigate("/gastroW/")
     //logindensonra çalışanları entry adlı sayfaya yönlendir iş alınan yere
   })
   .catch((error) => {
@@ -84,7 +84,7 @@ signInWithEmailAndPassword(auth, email, password)
                   <div className="form-button mt-3">
                       <button id="submit" type="submit"  className="btn btn-warning lg">  Log In  </button>
                   </div>
-                  <Link to="/register">
+                  <Link to="/gastroW/register">
                   <p>Dont Have an account?</p>
                   </Link>
               </form>

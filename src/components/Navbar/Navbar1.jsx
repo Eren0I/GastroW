@@ -52,7 +52,7 @@ const Navbar1 = () => {
   const logoutUser=()=> {
     signOut(auth).then(() => {
  toast.success("LogOut Successfully")
- useNavigate("/")
+ useNavigate("/gastroW/")
     }).catch((error) => {
       toast.error(error.code) 
     });
@@ -63,7 +63,7 @@ const Navbar1 = () => {
   return (
      <Navbar className="navshadow" collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-      <NavLink style={{textDecoration: 'none'}} to="/">
+      <NavLink style={{textDecoration: 'none'}} to="/gastroW/">
       <Navbar.Brand >
             <img
               alt=""
@@ -79,7 +79,7 @@ const Navbar1 = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          <NavLink style={{textDecoration: 'none'}} to="/contact">
+          <NavLink style={{textDecoration: 'none'}} to="/gastroW/contact">
           <Nav.Link as="nav" >Contact</Nav.Link>
           </NavLink>
           </Nav>
@@ -93,7 +93,7 @@ const Navbar1 = () => {
 
           <Nav>
           <ShowOnLogOut>
-          <NavLink style={{textDecoration: 'none', marginRight:"20px",marginBottom:"5px"}} to="/register">
+          <NavLink style={{textDecoration: 'none', marginRight:"20px",marginBottom:"5px"}} to="/gastroW/register">
             <Button variant="outline-dark" as="nav">
               Register
             </Button>
@@ -101,14 +101,14 @@ const Navbar1 = () => {
             </ShowOnLogOut>
 
             <ShowOnLogOut>
-          <NavLink style={{textDecoration: 'none'}} to="/login">
+          <NavLink style={{textDecoration: 'none'}} to="/gastroW/login">
             <Button as="nav">LogIn</Button>
             </NavLink>
             </ShowOnLogOut>
             
 
             <ShowOnLogIn>
-          <NavLink onClick={logoutUser} style={{textDecoration: 'none'}} to="/">
+          <NavLink onClick={logoutUser} style={{textDecoration: 'none'}} to="/gastroW/">
             <Button as="nav">LogOut</Button>
             </NavLink>
             </ShowOnLogIn>

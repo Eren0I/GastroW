@@ -25,12 +25,12 @@ function App() {
     <ToastContainer/>
       <Navbar1/>
       <Routes>
-        <Route path="/" element={ <Home/> }/>
-        <Route path="/contact" element={ <Contact/> }/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/reset" element={<Reset/>}/>
-        <Route path="/announcement" element={<Announcement/>}/>
+        <Route path="/gastroW/" element={ <Home/> }/>
+        <Route path="/gastroW/contact" element={ <Contact/> }/>
+        <Route path="/gastroW/login" element={<Login/>}/>
+        <Route path="/gastroW/register" element={<Register/>}/>
+        <Route path="/gastroW/reset" element={<Reset/>}/>
+        <Route path="/gastroW/announcement" element={<Announcement/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
